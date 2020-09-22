@@ -1,0 +1,8 @@
+Briefly summarize what are Flask Context Globals
+
+Flask context globals are variables that are accessible to a thread whilst a context is activated
+while not impeding or affecting other threads. With the application context active, the current
+application object (current_app) and temporary storage variable (g) are available for the current
+thread to use. Similarly, activating the request context allows the contents of the HTTP request
+object (request) and the current user session's parameters (session) to be available for use. If
+neither context is activated, any attempt to reference these context globals will error out.
